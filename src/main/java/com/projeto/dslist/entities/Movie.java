@@ -26,8 +26,10 @@ public class Movie {
 
     private String imgUrl;
 
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
 
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Movie(){
