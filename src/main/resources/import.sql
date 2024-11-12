@@ -1,3 +1,6 @@
+INSERT INTO tb_movie_list (name) VALUES ('Ação e Drama');
+INSERT INTO tb_movie_list (name) VALUES ('Romance e Comédia');
+
 INSERT INTO tb_movie (title, score, movie_year, genre, platform, img_url, short_description, long_description) VALUES('The Godfather', 9.2, 1972, 'Crime, Drama', 'Netflix, Prime Video', 'https://www.imdb.com/title/tt0068646/mediaviewer/rm1772654849/?ref_=tt_ov_i','An organized crime dynasty''s aging patriarch transfers control of his empire to his reluctant son.','The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. An intricate, deeply human story about power, loyalty, and family.');
 INSERT INTO tb_movie (title, score, movie_year, genre, platform, img_url, short_description, long_description) VALUES('The Shawshank Redemption', 9.3, 1994, 'Drama', 'Hulu, HBO Max', 'https://www.imdb.com/title/tt0111161/mediaviewer/rm1690056449/?ref_=tt_ov_i','Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.','The story of a man wrongfully imprisoned and his lifelong struggle for freedom and justice. A tale of hope, friendship, and resilience.');
 INSERT INTO tb_movie (title, score, movie_year, genre, platform, img_url, short_description, long_description) VALUES('Schindler''s List', 9.0, 1993, 'Biography, Drama, History', 'Netflix', 'https://www.imdb.com/title/tt0108052/mediaviewer/rm844076801/?ref_=tt_ov_i','In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce.','A heartbreaking story of one man’s mission to save Jews during the Holocaust, illustrating human courage and the tragedy of war.');
@@ -8,3 +11,15 @@ INSERT INTO tb_movie (title, score, movie_year, genre, platform, img_url, short_
 INSERT INTO tb_movie (title, score, movie_year, genre, platform, img_url, short_description, long_description) VALUES('The Wizard of Oz', 8.1, 1939, 'Adventure, Family, Fantasy', 'Disney+', 'https://www.imdb.com/title/tt0032138/mediaviewer/rm614629889/?ref_=tt_ov_i','Young Dorothy Gale and her dog are swept away by a tornado from their Kansas farm to the magical Land of Oz.','A beloved classic that transports audiences to a magical world, celebrating courage, friendship, and the journey home.');
 INSERT INTO tb_movie (title, score, movie_year, genre, platform, img_url, short_description, long_description) VALUES('One Flew Over the Cuckoo''s Nest', 8.7, 1975, 'Drama', 'Prime Video, Netflix', 'https://www.imdb.com/title/tt0073486/mediaviewer/rm127369217/?ref_=tt_ov_i','A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse.','A powerful drama that explores themes of individuality, freedom, and institutional oppression, with a mix of humor and tragedy.');
 INSERT INTO tb_movie (title, score, movie_year, genre, platform, img_url, short_description, long_description) VALUES('Lawrence of Arabia', 8.3, 1962, 'Adventure, Biography, Drama', 'Prime Video', 'https://www.imdb.com/title/tt0056172/mediaviewer/rm599940609/?ref_=tt_ov_i','The story of T.E. Lawrence, the English officer who successfully united and led the Arab tribes during World War I.','An epic journey that examines heroism, identity, and loyalty, set against the vast deserts of the Middle East.');
+
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (1, 1, 0);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (1, 2, 1);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (1, 3, 2);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (1, 4, 3);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (1, 5, 4);
+
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (2, 6, 0);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (2, 7, 1);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (2, 8, 2);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (2, 9, 3);
+INSERT INTO tb_belonging (list_id, movie_id, position) VALUES (2, 10, 4);
