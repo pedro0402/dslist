@@ -1,6 +1,7 @@
 package com.projeto.dslist.dto;
 
 import com.projeto.dslist.entities.Movie;
+import com.projeto.dslist.projections.MovieMinProjection;
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,6 +24,14 @@ public class MovieMinDTO {
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
+    }
+
+    public MovieMinDTO(MovieMinProjection projection){
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {

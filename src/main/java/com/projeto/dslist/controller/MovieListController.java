@@ -19,10 +19,17 @@ public class MovieListController {
 
     @Autowired
     private MovieListService movieListService;
+    @Autowired
+    private MovieService movieService;
 
     @GetMapping()
     public List<MovieListDTO> findAll(){
         return movieListService.findAll();
+    }
+
+    @GetMapping(value = "/{listId}/movies")
+    public List<MovieMinDTO> findByList(@PathVariable Long listId){
+        return movieService.findByList(listId);
     }
 
 
